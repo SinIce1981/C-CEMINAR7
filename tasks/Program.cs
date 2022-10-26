@@ -227,7 +227,7 @@ void Zadacha1()
 
     Random random = new Random();
     int rows = 2;
-    int columns = 6;
+    int columns = 10;
     Console.WriteLine($"Массив размера {rows}*{columns}");
     int[,] numbers = new int[rows, columns];
 
@@ -262,6 +262,9 @@ void Zadacha1()
     Console.WriteLine("Количество побед :" + win);
     Console.WriteLine("Количество поражений :" + lose);
     Console.WriteLine("Количество ничьих :" + draw);
+    points = win*3+draw;
+    Console.WriteLine($"Количество очков команды {points}");
+
 
 
 }
